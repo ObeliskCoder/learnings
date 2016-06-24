@@ -25,6 +25,10 @@ myFirstApp.controller('firstController',function($scope,$interval){
 		$scope.sliderSwitch = true;
 		$scope.index = $scope.index+1;
 		$scope.slider = $interval(function () {
+			if($scope.index >= 1060){ //End of image list
+				$scope.index = 2; // Start from second image
+				return false;
+			}
 			$scope.index = $scope.index+1;
 		}, 3000);
 	};
