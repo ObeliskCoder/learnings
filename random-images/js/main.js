@@ -26,14 +26,11 @@ myFirstApp.controller('firstController',function($scope,$interval){
 		$scope.index = $scope.index+1;
 		$scope.slider = $interval(function () {
 			$scope.index = $scope.index+1;
-			console.log('index:'+$scope.index);
 		}, 3000);
 	};
 	
 	$scope.stopAutoplay = function () {
-		console.log('inside close');
         if (angular.isDefined($scope.slider)) {
-			console.log('inside isdefined');
 			$interval.cancel($scope.slider);
 			$scope.sliderSwitch = false;
         }
