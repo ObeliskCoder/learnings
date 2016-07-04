@@ -1,0 +1,10 @@
+@-ms-viewport{
+  width: device-width;
+}
+.content{
+	border:2px solid #ccc;
+	padding:10px;
+}
+.list img{
+	max-width:98%;
+}

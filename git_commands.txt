@@ -1,0 +1,6 @@
+git add shopping_list
+git commit -m "proper commit"
+git checkout -b angular-learnings
+git remote add naga_repo https://github.com/naga90/learnings
+git push -f naga_repo angular-learnings 
+
